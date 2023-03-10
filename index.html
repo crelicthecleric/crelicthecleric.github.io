@@ -3,6 +3,15 @@
 <body>
 
 <h1>The world exists</h1>
+<img id="duck" src="img/duck.png" alt="Duck">
+  
+<script type="text/javascript">
+const audio = new Audio("audio/quack.mp3");
+const duck = document.getElementById("duck");
 
+duck.addEventListener("click", () => {
+  audio.play();
+});
+</script>
 </body>
 </html>
